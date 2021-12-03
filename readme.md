@@ -221,23 +221,6 @@ On top of the provided reset, these classes add an additional layer of styling t
 </label>
 ```
 
-### Typography
-
-Sensible default styles are applied to headings, paragraphs, and other elements of typography.
-These are the covered elements:
-
-- h1
-- h2
-- h3
-- h4
-- h5
-- h6
-- p
-
-### Container
-
-The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind.
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
