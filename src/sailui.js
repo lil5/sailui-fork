@@ -11,6 +11,7 @@ module.exports = plugin(function ({
 
 	addComponents(require("./components/card"));
 	addComponents(require("./components/alert"));
+	addComponents(require("./components/container"));
 	addComponents(require("./components/btn")({ theme: sailTheme }));
 	addComponents(require("./components/badge")({ theme: sailTheme }));
 	addComponents(require("./components/link")({ theme: sailTheme }));
