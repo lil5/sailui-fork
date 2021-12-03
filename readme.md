@@ -43,11 +43,11 @@ module.exports = {
 ```
 
 ### Compatibility
-| Tailwind CSS  | Sail UI |
-| ------- | ------- |
-| v1.9.0  | v0.4.0  |
-| v2.0.0  | v0.5.0  |
 
+| Tailwind CSS | Sail UI |
+| ------------ | ------- |
+| v1.9.0       | v0.4.0  |
+| v2.0.0       | v0.5.0  |
 
 ## Usage
 
@@ -104,25 +104,19 @@ These components are included:
 #### Alerts
 
 ```html
-<div class="alert">
-  <strong>Normal stuff!</strong> zero concerns.
-</div>
+<div class="alert"><strong>Normal stuff!</strong> zero concerns.</div>
 
 <div class="alert alert-blue">
   <strong>All is clear!</strong> So far so good.
 </div>
 
-<div class="alert alert-green">
-  <strong>Fantastic!</strong> You did it.
-</div>
+<div class="alert alert-green"><strong>Fantastic!</strong> You did it.</div>
 
 <div class="alert alert-yellow">
   <strong>Watch out!</strong> Things are going down south.
 </div>
 
-<div class="alert alert-red">
-  <strong>Too late!</strong> It's hit the fan.
-</div>
+<div class="alert alert-red"><strong>Too late!</strong> It's hit the fan.</div>
 ```
 
 #### Badges
@@ -144,14 +138,15 @@ These components are included:
 #### Links
 
 ```html
-<span>This is a <a href="#" class="link">link</a></span>.
+<span>This is a <a href="#" class="link">link</a></span
+>.
 ```
 
 ### Forms
 
 Sail UI uses the [`forms` plugin from Tailwind Labs](https://github.com/tailwindlabs/tailwindcss-forms)
 to reset form styles.
- 
+
 On top of the provided reset, these classes add an additional layer of styling to form elements:
 
 - [.form-input](#form-input)
@@ -207,7 +202,9 @@ On top of the provided reset, these classes add an additional layer of styling t
 <div class="flex mt-6">
   <label class="flex items-center">
     <input type="checkbox" class="form-checkbox" />
-    <span class="ml-2">I agree to your <span class="underline">terms</span></span>.
+    <span class="ml-2"
+      >I agree to your <span class="underline">terms</span></span
+    >.
   </label>
 </div>
 ```
@@ -217,9 +214,17 @@ On top of the provided reset, these classes add an additional layer of styling t
 ```html
 <label class="block mt-6">
   <span class="text-gray-700">Notes</span>
-  <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Write something..."></textarea>
+  <textarea
+    class="form-textarea mt-1 block w-full"
+    rows="3"
+    placeholder="Write something..."
+  ></textarea>
 </label>
 ```
+
+### Container
+
+The `mx-auto` style is automatically applied to center the default `.container` that comes out of the box with Tailwind.
 
 ## License
 
