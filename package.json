@@ -17,13 +17,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.4",
-    "tinycolor2": "^1.4.2"
+    "@tailwindcss/forms": "^0.3.4"
   },
   "devDependencies": {
-    "tailwindcss": "^2.0.0",
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.0.9"
+    "tailwindcss": "^2.0.0"
   },
   "peerDependencies": {
     "tailwindcss": "^2.0.0",
