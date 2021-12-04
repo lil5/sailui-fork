@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.alert {
+		@apply border p-3 rounded mb-2;
+		@apply bg-white text-black border-gray-300 dark:bg-black dark:text-white dark:border-gray-800;
+	}
+	.alert-info {
+		@apply bg-info-light border-info dark:bg-info-dark;
+	}
+	.alert-success {
+		@apply bg-success-light border-success dark:bg-success-dark;
+	}
+	.alert-warning {
+		@apply bg-warning-light border-warning dark:bg-warning-dark;
+	}
+	.alert-danger {
+		@apply bg-danger-light border-danger dark:bg-danger-dark;
+	}
+
+	.badge {
+		@apply inline-block py-0 px-1 rounded-sm text-sm font-bold;
+		@apply bg-black text-white;
+	}
+	.badge-primary {
+		@apply bg-primary;
+	}
+	.badge-secondary {
+		@apply bg-secondary;
+	}
+	.badge-info {
+		@apply bg-info;
+	}
+	.badge-success {
+		@apply bg-success;
+	}
+	.badge-warning {
+		@apply bg-warning;
+	}
+	.badge-danger {
+		@apply bg-danger;
+	}
+
+	.btn {
+		@apply inline-block py-1 px-2 transition-colors cursor-pointer rounded;
+		@apply bg-white dark:bg-gray-800 dark:text-white;
+	}
+	.btn-primary {
+		@apply bg-primary text-white;
+	}
+	.btn-secondary {
+		@apply bg-secondary text-white;
+	}
+	.btn-info {
+		@apply bg-info text-white;
+	}
+	.btn-success {
+		@apply bg-success text-white;
+	}
+	.btn-warning {
+		@apply bg-warning text-white;
+	}
+	.btn-danger {
+		@apply bg-danger text-white;
+	}
+
+	.card {
+		@apply p-2 rounded-lg shadow border;
+		@apply bg-white border-gray-300 dark:bg-gray-900 dark:border-gray-800;
+	}
+
+	.container {
+		@apply mx-auto;
+	}
+
+	/* form */
+	.form-checkbox {
+		@apply border rounded-sm focus:shadow;
+		@apply text-primary focus:border-primary;
+	}
+
+	.form-radio {
+		@apply border rounded-full focus:shadow;
+		@apply text-primary focus:border-primary;
+	}
+
+	.form-select,
+	.form-input {
+		@apply border rounded focus:shadow;
+	}
+	.form-select-info,
+	.form-input-info {
+		@apply border-info focus:border-info-dark dark:focus:border-info-light;
+	}
+	.form-select-success,
+	.form-input-success {
+		@apply border-success focus:border-success-dark dark:focus:border-success-light;
+	}
+	.form-select-warning,
+	.form-input-warning {
+		@apply border-warning focus:border-warning-dark dark:focus:border-warning-light;
+	}
+	.form-select-danger,
+	.form-input-danger {
+		@apply border-danger focus:border-danger-dark dark:focus:border-danger-light;
+	}
+
+	.form-textarea {
+		@apply border rounded focus:shadow;
+		@apply bg-white text-black dark:bg-gray-900 dark:text-white;
+	}
+
+	/* end form */
+
+	.link {
+		@apply transition-colors cursor-pointer underline;
+		@apply text-primary hover:text-primary-dark dark:hover:text-primary-light;
+	}
+}

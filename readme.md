@@ -1,18 +1,17 @@
-# Sail UI
+# Sail Fork UI
 
-[![npm](https://img.shields.io/npm/v/sailui)](https://www.npmjs.com/package/sailui)
-[![GitHub license](https://img.shields.io/github/license/sailui/ui)](https://github.com/sailui/ui/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/github/license/sailui/ui)](https://github.com/lil5/sailui-fork/blob/fork/LICENSE.md)
 
-A collection of basic UI components built on Tailwind CSS.
+A collection of basic UI classes built on Tailwind CSS.
 
-[Demo](https://sailui.github.io/).
+[Demo](https://lil5.github.io/sailui-fork/).
 
 ## Who's this for?
 
 ### Serial Users
 
 If you're already using Tailwind and you find yourself repeatedly creating
-a few common component classes for every project, **Sail UI** is for you.
+a few common component classes for every project, **Sail Fork UI** is for you.
 
 This package helps you with a few basic components, so that you can start
 building your prototype / draft / MVP before you get down to polishing your
@@ -25,33 +24,38 @@ Use `.btn`, `.card` and other classes you're familiar with to get you started an
 If you're moving away from another framework to Tailwind
 and you're afraid of taking the leap because you don't want to
 build all of those lovely components from scratch yourself,
-**Sail UI** will help you with the transition.
+**Sail Fork UI** will help you with the transition.
 
 ## Installation
 
+Copy the config file and tailwind post css file for this project.
+
 ```bash
-npm install sailui
+wget https://github.com/lil5/sailui-fork/raw/fork/src/tailwind.config.js
+
+wget https://github.com/lil5/sailui-fork/raw/fork/src/tailwind.pcss
 ```
 
-Add `sailui` to your `tailwind.config.js` file:
+Install dependencies
 
-```js
-module.exports = {
-  // ...
-  plugins: [require("sailui")],
-};
+```bash
+npm install @tailwindcss/forms
+```
+
+Run Tailwind CLI
+
+```bash
+npx tailwindcss -i tailwind.pcss -o build/output.css -c tailwind.config.js
 ```
 
 ### Compatibility
 
-| Tailwind CSS | Sail UI |
-| ------------ | ------- |
-| v1.9.0       | v0.4.0  |
-| v2.0.0       | v0.5.0  |
+- Tailwind CSS `v2.*.*`
+- Tailwind Forms Plugin: `v0.3.4`
 
 ## Usage
 
-Start using Sail UI component classes just like how you're used to.
+Start using Sail Fork UI component classes just like how you're used to.
 
 ```html
 <a href="/" class="btn"></a>
@@ -59,16 +63,17 @@ Start using Sail UI component classes just like how you're used to.
 
 ### Customizing the primary color
 
-Simply add a `theme.colors.primary` key to your `tailwind.config.js` and Sail UI will use it as the default color
-for all available components:
+Simply edit a `theme.colors.primary` key to your `tailwind.config.js` and Sail UI will use it as the primary color:
 
 ```js
 module.exports = {
   // ...
   theme: {
-    extend: {
-      colors: {
-        primary: "#ff6394",
+    colors: {
+      primary: {
+        light: colors.purple[300],
+        DEFAULT: "#ff6394",
+        dark: colors.purple[800],
       },
     },
   },

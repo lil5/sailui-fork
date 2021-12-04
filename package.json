@@ -31,6 +31,7 @@
     "postcss": "^8.0.9"
   },
   "scripts": {
-    "build": "npx tailwindcss build docs/styles.css -o docs/output.css -c docs/tailwind.config.js"
+    "build": "npx tailwindcss build -i src/tailwind.pcss -o docs/output.css -c src/tailwind.config.js",
+    "dev": "npx tailwindcss --watch -i src/tailwind.pcss -o docs/output.css -c src/tailwind.config.js"
   }
 }
